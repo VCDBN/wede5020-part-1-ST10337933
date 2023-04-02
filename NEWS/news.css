@@ -1,0 +1,98 @@
+.hero{    
+    width: 90%;
+    margin: auto;
+}
+.navbar{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+ul{
+   flex: 1;
+    text-align: right;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15 25px;
+    padding: 6px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    position: relative;
+}
+ul li a::after{
+    content:'' ;
+    width: 0;
+    height: 5px;
+    background:  #eb63dd;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -50%;
+    transition: 0.5s;
+}
+ul li a:hover::after{
+    width: 80%;
+}
+.navbar-icons img{
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.navbar-icons{
+    margin-left: 40px;
+}
+/* navbar css ends here */
+
+/* the news css starts here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.newsSection{
+    width: 100%;
+}
+.newsSection .section-content{
+    width: 70%;
+    margin: 20px auto;
+}
+.newsSection .section-content .title{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.newsSection .section-content .title h1{
+    font-size: 40px;
+    color: rgba(227,61,148);
+    text-decoration: underline;
+    padding: 10px;
+}
+.newsSection .section-content .title p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.newsSection .section-content .cards{
+    display: grid;
+    grid-gap: 50px; 
+}
+.newsSection .section-content .cards .card img{
+    width: 100%;
+    height: auto;
+}
+.newsSection .section-content .cards .card{
+    width: 100%;
+    position: relative;
+    background-color: #f7f7f7;
+}
+.newsSection .section-content .cards .card .posted{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    padding-bottom: 6px 15px;
+}

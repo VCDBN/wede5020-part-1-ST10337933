@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis',sans-serif;
+}
+.hero{    
+    width: 90%;
+    margin: auto;
+}
+.navbar{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+ul{
+   flex: 1;
+    text-align: right;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15 25px;
+    padding: 6px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    position: relative;
+}
+ul li a::after{
+    content:'' ;
+    width: 0;
+    height: 5px;
+    background:  #eb63dd;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -50%;
+    transition: 0.5s;
+}
+/*the hover effect*/
+ul li a:hover::after{
+    width: 80%;
+}
+.navbar-icons img{
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.navbar-icons{
+    margin-left: 40px;
+}
+/*the css for the navigationbar ends here*/
+.banner{
+    display: flex;
+    margin-top: 80px;
+}
+.left-column{
+    flex-basis: 50%;
+}
+.left-column h1{
+    font-size: 60px;
+    font-style: italic;
+    color: black;
+}
+.left-column h3{
+    font-size: 30px;
+}
+span{
+    color: #eb63dd;
+}
+/*this is the css for the content on the homepage*/
